@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="stylett.css">
+</head>
+<body>
+    <section class="container   testimonials__Containers swiper mySwiper">
+        <h2 style="text-align: center; font-size: 75px; color: rgb(248, 153, 36);"> OUR TOP CONTRIBUTERS! </h2>
+        <div class="swiper-wrapper">
+          <article class="testimonials swiper-slide">
+            <div class="avatar">
+             <img src=" # Screenshot (33).png" alt="" width="70px" height="70px">
+            </div>
+             <div class="testimonial__info">
+              <h5>akash</h5>
+              <small>C.S.E</small>
+            </div>
+      
+             <div class="testimonial__body">
+              <p>
+                <br>Currently stud<br>entusiast web devloper<br><a href="https://www.linkedin.com/in/bhaskar-r-bab214249">LinkedIn</a>
+               </p> 
+             </div>
+          </article>
+      
+      <article class="testimonials swiper-slide">
+        <div class="avatar">
+         <img src=" # Screenshot (34).png" alt="" height="60px" width="60px">
+        </div>
+         <div class="testimonial__info">
+         <h5>Under Maintainence</h5>
+         <small>student</small> 
+        </div>
+      
+        <div class="testimonial__body">
+         <p>
+          <br>Currently studying in 3rd year<br> front-end devloper, python devloper.<br><a href="https://www.linkedin.com/in/deepak-kumar-prajapati-b44b3a227">LinkedIn</a>
+         </p>
+        </div>
+      </article>
+      
+      <article class="testimonials swiper-slide">
+        <div class="avatar">
+         <img src="/images/pngegg.png" alt="">
+        </div>
+         <div class="testimonial__info">
+         <h5>Bhaskar Rajaura</h5>
+         <small>C.S.E(A.I)</small> 
+        </div>
+      
+        <div class="testimonial__body">
+         <p>
+          currently studying in 2nd year<br>entusiast web devloper, python devloper.<br>Link :
+         </p>
+        </div>
+      </article>
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+
+</body>
+</html>

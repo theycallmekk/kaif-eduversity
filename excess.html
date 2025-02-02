@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Gallery</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #004080;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+
+    .gallery-container {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .gallery-item {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    footer {
+      background: #004080;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>College Gallery</h1>
+  </header>
+
+  <div class="gallery-container">
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="./images/csjmu1.jpg" alt="Campus View">
+      </div>
+      <div class="gallery-item">
+        <img src="./images/csjmu2.jpg" alt="Library">
+      </div>
+      <div class="gallery-item">
+        <img src="./images/csjmu3.jpg" alt="Sports Ground">
+      </div>
+      <div class="gallery-item">
+        <img src="./images/csjmu4.jpg" alt="Classrooms">
+      </div>
+      <div class="gallery-item">
+        <img src="./images/csjmu5.jpg" alt="Auditorium">
+      </div>
+      <div class="gallery-item">
+        <img src="./images/csjmu7.jpg" alt="Laboratory">
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 UIET. All Rights Reserved.</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>RESPONSIVE PORTFOLIO WEBSITE </title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="stylep.css">
+</head>
+
+<body>
+    <!--body-->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#services">PROJECTS</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <video autoplay loop muted plays-inline class="background-clip">
+                <source src="dummy.mp4" type="video/mp4">
+            </video>
+            <div class="content-overlay">
+                <h3>Hello, It's Me</h3>
+                <h1>Bhaskar</h1>
+                <h3>And I'm a <span class="multiple-text">Datascience Learner</span></h3>
+                <div class="social-media">
+                    <a href="https://github.com/bhaskarr103"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxs-envelope'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="www.linkedin.com/in/bhaskar-r-bab214249"><i class='bx bxl-linkedin-square'></i></a>
+                </div>
+                <a href="" class="btn">Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="Home.png" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About<span>Me</span></h2>
+            <h3>DATA SCIENCE LEARNER</h3>
+            <p>I'm Bhaskar Rajaura & I'm from Kanpur. I'm an III year engineering student from UIET Kanpur specialized
+                in Computer Science. I've maintained a CGPA of 8.50 in my academics.<br>
+                Along with my degree I've completed Machine Learning, SQL and Flask Courses online
+                .Moving forward in my career I hope to expand my experience across different industries.<br>
+                I'm a good learner and team player
+                That's all about my self. </p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+        <div class="services-container">
+            <!-- Carousel container -->
+            <div id="servicesCarousel" class="carousel">
+                <!-- Carousel items -->
+                <div class="carousel-item active">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>FRONT END DEVELOPMENT</h3>
+                    <p>Motivated designer and developer with experience creating custom websites through HTML and CSS. Strong collaboration skills and proven history of application development.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+                <div class="carousel-item">
+                    <i class='bx bx-crop'></i>
+                    <h3>DATA ANALYST</h3>
+                    <p>I specialize in translating complex data into clear, concise reports and visualizations; that empower teams to thrive in a data-driven world</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+                <div class="carousel-item">
+                    <i class='bx bxl-instagram-alt'></i>
+                    <h3>MACHINE LEARNING</h3>
+                    <p>Passion to harness the power of data and algorithms to drive real-world solutions.</p>
+                    <a href="mlproject.html" class="btn">Read More</a>
+                </div>
+                <!-- Carousel controls -->
+                <a class="carousel-control prev" onclick="moveSlide(-1)">❮</a>
+                <a class="carousel-control next" onclick="moveSlide(1)">❯</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Bhaskar | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        let slideIndex = 0;
+
+        function moveSlide(step) {
+            const slides = document.getElementsByClassName('carousel-item');
+            if (step > 0) {
+                slideIndex = (slideIndex + 1) % slides.length;
+            } else {
+                slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+            }
+            Array.from(slides).forEach((slide, index) => {
+                slide.style.transform = `translateX(${-slideIndex * 100}%)`;
+            });
+        }
+
+        // Optional: Auto-slide functionality
+        setInterval(() => moveSlide(1), 3000); // Change slides every 3 seconds
+
+    </script>
+
+</body>
+
+</html>

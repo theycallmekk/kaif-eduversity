@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+    
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
+         <style>
+        /* Dropdown container */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown button */
+        .dropbtn {
+            background-color: transparent;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Font Awesome icon style */
+        .dropbtn i {
+            margin-right: 8px;
+            font-size: 18px;
+        }
+
+        /* Change button color on hover */
+        .dropdown:hover .dropbtn {
+            background-color: #444;
+            color: #fff;
+            border-radius: 4px;
+        }
+
+        /* Dropdown content */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            top: 100%;
+            left: 0;
+            border-radius: 4px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        /* Dropdown item style */
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover effect for items */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* Show dropdown on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+            opacity: 1;
+        }
+    
+
+    </style>
+</head>
+<body>
+    <!--------NAVIGATION------->
+    <nav>
+        <img src="images/uiet.jpg" alt="">
+        <div class="navigation">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="papers.html">PAPERS</a></li>
+                <li><a href="notes.html">NOTES</a></li>
+                <!-- Custom Dropdown with Font Awesome Icon -->
+                <li class="dropdown">
+                    <a href="#" class="dropbtn"><i class="fas fa-user"></i> <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="login.html">Login</a>
+                        <a href="register.html">Register</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+
+    <!--        HOME    -->
+
+    <section id="home">
+        <h1 class="rainbow" style="font-size: 3rem;">Eduversity.</h1>
+        <!-- <p>The Site is under maintainence, Papers section is available.<br>Notes will be uploaded shortly.<br> Have patience !</p>
+        <div class="btn">
+            <button class="button-36" role="button">About Us!</button>
+        </div> -->
+    </section>
+
+    <!-----END HOME  -->
+
+    <!-----CATEGORIES    -->
+
+    <section class="categories">
+        <div class="categories_container">
+
+            <!-- <video autoplay loop muted plays-inline class="background-clip">
+                <source src="Background.mp4" type="video/mp4">
+            </video> -->
+            
+            <div class="categories_left">
+                <h1>Categories</h1>
+                <p>This site was designed with the vision on helping the students of UIET  with previous years exam Papers,<br>Notes and other stuffs like books, videos which will help them with their academics<br>, and help them grow better in their academics as well as in their respective fields too.</p>
+                <!--<button type="button" class="btn"><a href="#">Learn More!</a></button>-->
+            </div>
+            <div class="categories_right">
+                <article class="category">
+                    <span class="category_icon"><i class="uil uil-sigma"></i></span>
+                    <h6><a href="notes.html" style="text-decoration:none;">NOTES</a></h6>
+                    <p>access previous year<br>notes here.</p>
+                </article>
+                <article class="category">
+                    <span class="category_icon"><i class="uil uil-text-size"></i></span>
+                    <h6><a href="papers.html" style="text-decoration:none;">PAPERS</a></h6>
+                    <p>access previous year<br>papers here.</p>
+                </article>
+                <article class="category">
+                    <span class="category_icon"><i class="uil uil-x-add"></i></span>
+                    <h6><a href="help.html" style="text-decoration:none;">CONTRIBUTE.</a></h6>
+                    <p><a href="help.html" style="text-decoration:none;">Upload materials here.</a></p>
+                </article>
+                
+                <article class="category">
+                    <span class="category_icon"><i class="uil uil-balance-scale"></i></span>
+                    <h6><a href="excess.html" style="text-decoration:none;">GALLERY</a></h6>
+                    <p><a href="excess.html" style="text-decoration:none;">click here !</a></p>
+                </article>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        
+        <div class="footer_bottom">
+            <p>copyright &copy;2024 by<sapan> UIET</span></p>
+        </div>
+    </footer>
+</body>
+</html>

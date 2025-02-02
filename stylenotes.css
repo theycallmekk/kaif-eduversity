@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.grid-container {
+    display: grid;
+    height: 400px;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    background-image: url(wp9637255-no-copyright-wallpapers.jpg);
+    padding: 10px;
+}
+  
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.category {
+    background-color: rgb(94, 210, 246);
+}
+
+.category h2 {
+    text-align: center;
+}
+
+.grid-container a {
+    color: black;
+}
+
+.cell {
+    background-color: gray;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+  }
+
+  div .cell {
+    text-align: center;
+    padding-top: 5%;
+    font-size: 25px;
+  }
+
+.cell a{
+    text-decoration: none;
+}
+  
+  .cell:hover {
+    background-color: rgb(237, 123, 142);
+  }
